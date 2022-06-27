@@ -10,15 +10,15 @@
                 border: none;
             }
             .text-align{
-                margin-top: -3%;
-                margin-bottom: -9%;
+                margin-top: -5%;
+                margin-bottom: -5%;
 
-                padding: 10%;
+                padding: 4%;
                 margin-left: 30%;
             }
             .form-new{
-                margin-right: 22%;
-                margin-left: 20%;
+                margin-right: 15%;
+                margin-left: 15%;
             }
             .register-heading{
                 margin-left: 21%;
@@ -31,9 +31,9 @@
                 color: #e9ecef;
             }
             .register{
-                background: -webkit-linear-gradient(left, #055a4f, #00c6ff);
-                margin-top: 3%;
-                padding: 3%;
+                background: -webkit-linear-gradient(left, #ffc57a, #e0a454);
+                margin-top: 1%;
+                padding: 1%;
                 border-radius: 2.5rem;
             }
             .btnSubmit
@@ -41,12 +41,12 @@
                 width: 50%;
                 border-radius: 1rem;
                 padding: 1.5%;
-                color: #fff;
-                background-color: #03612e;
+                color: rgb(255, 255, 255);
+                background-color: #570404;
                 border: none;
                 cursor: pointer;
                 margin-right: 6%;
-                color: rgb(246, 246, 252);
+                color: rgb(255, 255, 255);
                 margin-top: 4%;
             }
     </style>
@@ -58,8 +58,8 @@
             <div class="row">
                 <div class="col-md-12">
                         <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <h3>Madhumangal Gruh Udyog</h3>
-                            <h3>Customer Data</h3>
+                            <h3 style="text-align: center;">Madhumangal Gruh Udyog</h3>
+                            <h3 style="text-align: center;">Customer Data</h3>
                             <!-- <div class="row register-form"> -->
                                 <div class="col-md-15">
                                     <form method="post" autocomplete="on" name="google-sheet">
@@ -117,8 +117,9 @@
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              
                 .then(response => alert("Customer Data Saved Successfully."))
-                
+
                 .catch(error => console.error('Error! Customer Data Not Saved.', error.message))
             })
           </script>
